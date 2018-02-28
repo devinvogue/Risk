@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title> Genesis </title>
+    <link rel="stylesheet" href="assets/css/index.css" type="text/css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="header">
+		  <a href="index.html#"><img src="assets/images/blood.png" width="100vh" alt="blood logo" /> </a>
+		 <h1> GENESIS </h1> 
+		  <!-- 	Best Blood App </pre> -->
+		</div>
+
+		<div class="contactmain">
+
+			
+			<div class="contactInfo">
+		
+				<h4> Contact Us on </h4>
+				<p> 0202939105 or 0548183328 </p>
+				<a href="#"> Facebook </a>
+				<a href="#"> Twitter </a>
+				<a href="#"> Linkedin </a>
+				<a href="#"> Instagram </a>
+
+
+				
+	 		</div>
+
+	 		<div class="mapstyle">
+	 		<h4> Find us Here : Accra Digital Center </h4>
+
+	 		<div id="map" class="mapInfo">
+		
+			</div>	
+	 		</div>
+		
+			 <div class="navbar">
+				<ul>
+					<li><a href="index.html#"> Home </a>  </li>		
+					<li><a href="about.html#"> About </a> </li>
+					<li><a href="contact.html#"> Contact </a> </li> 
+					<li><button onclick="document.getElementById('form').style.display='block'" style="width:auto;"> Make Appointment </button></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Form -->
+
+			<div id="form" class="form">
+  
+			  <form class="form-content animate" >
+			    <div class="formhead">
+			      <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Modal">&times;</span>
+			      <h5> MAKE AN APPOINTMENT </h5>
+			    </div>
+
+			    <div class="contain">
+			      <label><b>NAME</b></label>
+			      <input type="text" placeholder=" eg. Naj Ubarb " name="name" required> 
+
+			      <label><b> AGE</b></label>
+			      <input type="number" placeholder=" eg. 25 " name="age" required> 
+
+			      <label><b> GENDER </b></label>
+			      <input type="radio" name="gender" value=" male" checked> Male  
+			      <input type="radio" name="gender" value=" female"> Female 
+			      <input type="radio" name="gender" value=" special"> Special 
+			      <input type="text" placeholder=" eg. If special, Please specify " name="other">
+
+			      <label><b> ADDRESS </b></label>
+			      <input type="text" placeholder=" eg. no 4. Kakramundu street, cantonment, Accra. " name="adress" required>
+
+			      <label><b> DATE OF APPOINTMENT</b></label>
+			      <input type="number" placeholder=" eg. 28 / 02 / 2018 " name="age" required>
+
+			      <label><b> TIME OF APPOINTMENT</b></label>
+			      <input type="number" placeholder=" eg. 13:30 " name="age" required>
+
+			      <label><b> EMAIL</b></label>
+			      <input type="email" placeholder=" eg. @brigakyaa@gmail.com " name="email" required>
+			        
+			      <button type="submit"> Submit </button>
+			       
+			    </div>
+			   </form>
+		<div class="footer">
+			<p> &copy;2018 by Bridget and Najilau </p> 
+		</div>
+
+	</div>
+
+
+
+	<script>
+      function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(5.5654507790892565, -0.2227735494409444 ),
+    zoom:18,
+    mapTypeId:google.maps.MapTypeId.HYBRID
+  };
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD20-43m2bJSiB9a9wsImGqfv6z-26CkSs&callback=myMap"></script>
+
+</body>
+</html>

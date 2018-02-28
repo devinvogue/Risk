@@ -1,0 +1,461 @@
+/* styling the Pair Programing wed App */
+
+
+/* styling the Home Page */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100vh;
+	width: 100vw;
+	font-family: sans-serif;
+    }
+
+    /* styling links*/
+
+    a{
+    	color: white;
+    	text-decoration: none;
+    }
+
+ 	/* container holding all the elements - header, main and footer */
+
+.container { 
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: teal;
+	justify-content: center;
+	align-items: center;
+ }
+ 	 	/* header, contains the Website's logo, Website's name and Tagline*/
+
+.header {
+	width: 100%;
+	height:10vh;
+	margin: 0px; 
+	justify-content: center;
+	align-items: center;
+	padding:0px;
+	display: flex;
+	flex-direction: row;
+	color: #ef7126;
+	background-color: rgb(33, 140, 141);
+	box-shadow: 0 4px 6px rgba(0,0,0,0.18), 0 3px 5px rgba(0,0,0,0.20);
+	text-shadow: 0 2px 2px rgba(0,0,0,0.18), 0 2px 2px rgba(0,0,0,0.20);
+	}
+
+		 /* main holding the Daily tips, the Option and the Navbar */
+
+.main {
+	padding : 0px;
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	align-items: center;
+	background-image:  url("../images/blood2.png");
+	background-size: contain;
+}
+
+			 /* Daily tips style the animation of the messages popping up every 24 hours.*/
+
+.dailyTips{
+	width: 100%;
+	height: 10vh;
+	margin: 0px;
+	justify-content: center;
+	align-items: center;	
+	padding:0px;
+	display: flex;
+	flex-direction: row;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.13), 0 3px 5px rgba(0,0,0,0.20);
+	background-color: teal; 
+	color: white;
+	background-image: linear-gradient(180deg, teal -20%, white 180%);
+	opacity: 0.8;
+}
+
+			 /* Options hold the Various blood group options */
+
+.options{
+	color : white;
+    background-color: rgba(49, 132, 155, 0.6);
+    /*background-image: linear-gradient(125deg,  white -50%, teal 100%);*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding : 5%;
+    width: 500px;
+    border-radius: 50px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 3px 5px rgba(0,0,0,0.20);
+   }
+
+   				 /* box styles the blood sample options */
+
+.box{
+	height: 50px;
+    width : 200px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.30);
+    margin : 3% 5%;
+    text-align: center;
+    background-color: teal;
+    background-image: linear-gradient(125deg,  white -90%, teal 100%);
+    opacity: 0.6;
+    color : #ffffff;
+    display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	border-radius: 25px;
+	opacity: 0.8;
+}
+
+   			 /* Navbar styles the navigation bar and holds the Home, About, Contact and Game panels. 
+   			    ul an li adds aditional styling to the Navbar */
+
+.navbar{
+	width: 100%;
+	height: 10vh;
+	margin: 0px; 
+	justify-content: center;
+	align-items: center;
+	padding:0px;
+	display: flex;
+	flex-direction: row;
+	box-shadow: 0 -4px 6px rgba(0,0,0,0.18), 0 3px 5px rgba(0,0,0,0.20);
+	background-color: teal; 
+	background-image: linear-gradient(180deg, white -50%, teal 100%);
+	opacity: 0.8;
+	}
+
+ul {
+	text-decoraton: none;
+	}
+
+li{
+	display: inline;
+	padding: 20px;
+	text-decoration: none;
+
+	}
+
+			 /* footer styles the pages footer*/
+
+.footer{
+	width: 100%;
+	height: 10vh;
+	margin: 0px; 
+	justify-content: center;
+	align-items: center;
+	padding:0px;
+	display: flex;
+	flex-direction: row;
+	box-shadow: 0 -4px 6px rgba(0,0,0,0.18), 0 3px 5px rgba(0,0,0,0.20);
+	background-color: rgb(32, 88, 103);
+	color: white;
+}
+
+/* Additiona Styling for the scrollbar*/
+
+ ::-webkit-scrollbar {
+ 	width:10px;
+ 	
+ }
+
+ ::-webkit-scrollbar-track {
+ 		background-color: teal;
+ 		border-radius: 5px;
+ }
+
+::-webkit-scrollbar-thumb {
+		background-color: rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
+}
+
+::-webkit-scrollbar-button {
+		background-color: rgba(255, 255, 255, 0.8);
+		border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+	background-color: grey;
+}
+
+
+/***************************************************************************************************************************************/
+
+ /* Styling About page*/
+ 
+ /* About page maintains the main Page structure, including the header, main (dailyTips and navbar) and footer */ 
+
+ 				/* About info gives information about the App and the Developers.*/
+
+ 			/* Aboutmain styles the main About Page*/
+
+ .aboutmain {
+	padding : 0px;
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	align-items: center;
+	background-image:  url("../images/blood1.jpg");
+	background-size: cover;
+	background-blend-mode: 0.9;}
+
+			/* AboutInfo styles the box holding the information in the about page.
+			 Title styles the About Us line. and Img syles the images in the about us description */
+
+.aboutinfo{
+	color : white;
+    background-color: rgba(49, 132, 155, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding : 5%;
+    width: 500px;
+    height: 30vh;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 3px 5px rgba(0,0,0,0.20);
+    overflow-y: scroll;
+   }
+
+	.title{ width: 100%; text-align: center;}
+
+
+	img{ width: 150px; }
+
+
+
+/***************************************************************************************************************************************/
+	/*Styling the contact page.*/
+
+	/* Contact page maintains the main Page structure, including the header, main (dailyTips and navbar) and footer */
+
+		/* Contactmain styles the main About Page*/
+
+.contactmain {
+	padding : 0px;
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	align-items: center;
+	background-image:  url("../images/blood8.jpg");
+	background-size: contain;
+	;}
+
+ 		/* Contactinfo styles the information in the contact section.*/
+
+.contactInfo{
+	color : white;
+    background-color: rgba(49, 132, 155, 1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding : 5%;
+    width: 35%;
+    height: 30vh;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 3px 5px rgba(0,0,0,0.20);
+       }
+
+
+/***************************************************************************************************************************************/
+	/*Styling the O blood type page.*/
+
+	/*Oinfo holds styles the three Information on Blood type */
+
+.Oinfo{
+	color : white;
+    background-color: rgba(49, 132, 155, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding : 2%;
+    margin: 0px 2%;
+    width: 23%;
+    height: 20vh;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 3px 5px rgba(0,0,0,0.20);
+    overflow-y: auto;
+   }
+
+.infomain {
+	padding : 0px;
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	align-items: center;
+	background-image:  url("../images/blood9.jpg");
+	background-size: contain;
+	}
+
+.donate{ width: 100%; text-align: center;
+	color : white;
+    background-color: rgba(49, 132, 155, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 3%;
+    margin: 0px 2%;
+    height: 15vh;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 3px 5px rgba(0,0,0,0.20);
+    overflow-y: auto;}
+
+
+
+
+
+
+/*###############################################################################################*/
+/*styling the appointment form */
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: teal;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.formhead {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.contain {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.form {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.form-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+ /* Styling the map*/
+
+ .mapstyle{
+ 	width: 45%; text-align: center;
+	color : white;
+    background-color: rgba(49, 132, 155, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 1%;
+    margin: 0px 2%;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 3px 5px rgba(0,0,0,0.20);
+    overflow-y: hidden;
+ }
+
+ .mapInfo{
+	color : white;
+    background-color: rgba(49, 132, 155, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding : 5%;
+    width: 80%;
+    height: 30vh;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 3px 5px rgba(0,0,0,0.20);
+       }
